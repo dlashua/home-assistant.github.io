@@ -29,7 +29,7 @@ Configuration variables:
 
 - **name** (*Optional*): Setting the optional parameter `name` allows multiple notifiers to be created. The default value is `notify`. The notifier will bind to the service `notify.NOTIFIER_NAME`.
 - **resource** (*Required*): The resource or endpoint that will receive the value.
-- **method** (*Optional*): The method of the request. Default is GET.
+- **method** (*Optional*): The method of the request. Default is GET. Valid methods are "GET", which places parameters in the query string; "POST", which submits data like a FORM, and "POST_JSON", which JSON encodes the parameters and sends them as the body of the request.
 - **headers** (*Optional*): The headers for the request.
 - **message_param_name** (*Optional*): Parameter name for the message. Defaults to `message`.
 - **title_param_name** (*Optional*): Parameter name for the title. Defaults to none.
